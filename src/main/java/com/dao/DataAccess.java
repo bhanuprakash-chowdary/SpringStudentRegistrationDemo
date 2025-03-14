@@ -15,7 +15,7 @@ public class DataAccess
 	{
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/usermanagement","root","Srikrishna@1234");
+		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/usermanagement","root","*******");
 		PreparedStatement ps=cn.prepareStatement("insert into student(sname,sage,scity,smobile) values(?,?,?,?)");
 		ps.setString(1,s.getName());
 		ps.setString(2,s.getAge());
